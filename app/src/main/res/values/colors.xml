@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#C42CF3</color>
+    <color name="purple_light">#E6C2FF</color>
+    <color name="pink">#FF33CC</color>
+    <color name="dark_gray">#2C2C2C</color>
+
+    <!-- Taily -->
+    <color name="taily_50">#FEF5FE</color>
+    <color name="taily_100">#FBE9FE</color>
+    <color name="taily_200">#F8D2FC</color>
+    <color name="taily_300">#F5AFF8</color>
+    <color name="taily_400">#EF80F2</color>
+    <color name="taily_500">#E34FE6</color>
+    <color name="taily_600">#CE30CF</color>
+    <color name="taily_700">#A724A4</color>
+    <color name="taily_800">#891F86</color>
+    <color name="taily_900">#701F6C</color>
+    <color name="taily_950">#4A0846</color>
+
+    <!-- Orbita-->
+    <color name="orbita_azul">#353E54</color>
+
+</resources>
