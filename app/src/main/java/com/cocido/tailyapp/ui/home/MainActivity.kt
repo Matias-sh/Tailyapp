@@ -1,4 +1,4 @@
-package com.cocido.tailyapp
+package com.cocido.tailyapp.ui.home
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.cocido.tailyapp.R
 import com.cocido.tailyapp.ui.auth.LoginActivity
 
 class MainActivity : AppCompatActivity() {

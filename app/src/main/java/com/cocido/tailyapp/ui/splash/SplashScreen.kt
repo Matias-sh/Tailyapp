@@ -5,12 +5,11 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.WindowManager
-import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.OvershootInterpolator
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.cocido.tailyapp.MainActivity
+import com.cocido.tailyapp.ui.home.MainActivity
 import com.cocido.tailyapp.R
 
 @Suppress("DEPRECATION")
