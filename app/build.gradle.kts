@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
 }
 
 android {
@@ -36,6 +37,10 @@ android {
 }
 
 dependencies {
+
+    //Glide y Kapt
+    implementation(libs.glide)
+    kapt(libs.glide.compiler)
 
     // Google Sign-In
     implementation(libs.google.auth)

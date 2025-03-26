@@ -7,7 +7,7 @@ import android.widget.*
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.cocido.tailyapp.ui.home.MainActivity
+import com.cocido.tailyapp.ui.feed.FeedActivity
 import com.cocido.tailyapp.R
 import com.cocido.tailyapp.viewmodel.LoginViewModel
 import com.google.android.gms.auth.api.signin.GoogleSignIn
@@ -65,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "✅ Login exitoso", Toast.LENGTH_SHORT).show()
 
                 // Ir a MainActivity
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, FeedActivity::class.java))
                 finish()
             }
         }

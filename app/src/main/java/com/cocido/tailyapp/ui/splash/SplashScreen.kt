@@ -9,7 +9,7 @@ import android.view.animation.OvershootInterpolator
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.cocido.tailyapp.ui.home.MainActivity
+import com.cocido.tailyapp.ui.feed.FeedActivity
 import com.cocido.tailyapp.R
 
 @Suppress("DEPRECATION")
@@ -50,7 +50,7 @@ class SplashScreen : AppCompatActivity() {
 
         // Handler().postDelayed({
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, FeedActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000) // 3000 is the delayed time in milliseconds.
