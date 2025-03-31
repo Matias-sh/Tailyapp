@@ -50,7 +50,10 @@ class RegisterActivity : AppCompatActivity() {
             val selectedImage: Uri? = data?.data
             selectedImage?.let {
                 // Carga la imagen seleccionada en el ImageView
-                Glide.with(this).load(it).into(ivProfilePic)
+                Glide.with(this)
+                    .load(it)
+                    .transform(com.bumptech.glide.load.resource.bitmap.CircleCrop())
+                    .into(ivProfilePic)
             } ?: run {
                 Toast.makeText(this, "No se seleccionó ninguna imagen", Toast.LENGTH_SHORT).show()
             }
