@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Tailyapp"
         tools:targetApi="31">
         <activity
+            android:name=".ui.auth.RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.splash.SplashScreen"
             android:exported="true">
             <intent-filter>
