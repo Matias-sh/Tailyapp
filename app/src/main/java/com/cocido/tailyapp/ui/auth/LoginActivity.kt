@@ -30,12 +30,13 @@ class LoginActivity : AppCompatActivity() {
             Log.i("LoginActivity", "✅ AuthCode recibido: $authCode")
 
             if (!authCode.isNullOrEmpty()) {
+                Log.i("LoginActivity", "Llamando ViewModel con authCode")
                 loginViewModel.loginWithGoogleMobile(authCode)
             } else {
                 Toast.makeText(this, "No se pudo obtener el auth code", Toast.LENGTH_SHORT).show()
             }
         } catch (e: ApiException) {
-            Log.e("LoginActivity", "❌ Google sign in failed (code ${e.statusCode}): ${e.message}", e)
+            Log.e("LoginActivity", "❌ Google sign in failed: ${e.message}", e)
             Toast.makeText(this, "Fallo autenticación con Google", Toast.LENGTH_SHORT).show()
         }
     }
@@ -53,18 +54,10 @@ class LoginActivity : AppCompatActivity() {
 
         googleSignInClient = GoogleSignIn.getClient(this, getGoogleSignInOptions())
 
-        // Observa el login con email/contraseña o con Google
         loginViewModel.loginResponse.observe(this) { response ->
             response?.let {
-                // Guardar token
-                getSharedPreferences("auth", MODE_PRIVATE)
-                    .edit()
-                    .putString("token", it.token)
-                    .apply()
-
+                Log.i("LoginActivity", "Token recibido del ViewModel: ${it.token}")
                 Toast.makeText(this, "✅ Login exitoso", Toast.LENGTH_SHORT).show()
-
-                // Ir a MainActivity
                 startActivity(Intent(this, FeedActivity::class.java))
                 finish()
             }
@@ -91,7 +84,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         tvForgotPassword.setOnClickListener {
-            // TODO: Implementar recuperación
+
         }
 
         btnGoogle.setOnClickListener {

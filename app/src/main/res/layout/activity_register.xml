@@ -128,7 +128,7 @@
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="30dp"
                 android:backgroundTint="@color/taily_500"
                 android:contentDescription="Botón para registrarse"
                 android:importantForAccessibility="yes"

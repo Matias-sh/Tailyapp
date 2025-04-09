@@ -2,6 +2,7 @@ package com.cocido.tailyapp.ui.feed
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +22,7 @@ class FeedActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feed)
+        Log.i("FeedActivity", "PASO")
 
         feedRecyclerView = findViewById(R.id.feedRecyclerView)
         feedRecyclerView.layoutManager = LinearLayoutManager(this)
@@ -28,12 +30,15 @@ class FeedActivity : AppCompatActivity() {
         val prefs = getSharedPreferences("auth", MODE_PRIVATE)
         val token = prefs.getString("token", null)
 
+        Log.i("FeedActivity", "Token recuperado del SharedPreferences: $token")
+
         if (token.isNullOrEmpty()) {
-            // Usuario no logueado, ir al login
+            Log.i("FeedActivity", "NO DETECTA EL TOKEN O LO DETECTA NULO")
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
             return
         }
+
 
         // Usuario logueado, continuar
         enableEdgeToEdge()
