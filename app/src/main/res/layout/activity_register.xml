@@ -77,22 +77,37 @@
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
+            <!-- Campo de Teléfono -->
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edit_text_background"
+                android:contentDescription="Campo de teléfono"
+                android:hint="Teléfono"
+                android:importantForAccessibility="yes"
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
             <!-- Campo de Contraseña -->
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Contraseña"
+                android:layout_marginTop="7dp"
+                app:boxBackgroundMode="none"
                 app:endIconMode="password_toggle"
                 app:endIconTint="@color/pink">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etPassword"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_height="match_parent"
                     android:background="@drawable/edit_text_background"
                     android:contentDescription="Campo de contraseña"
-                    android:hint="Contraseña"
                     android:importantForAccessibility="yes"
                     android:inputType="textPassword"
                     android:padding="12dp"
@@ -100,11 +115,15 @@
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
+
             <!-- Campo de Repetir Contraseña -->
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Repetir Contraseña"
+                app:boxBackgroundMode="none"
+                android:layout_marginTop="7dp"
                 app:endIconMode="password_toggle"
                 app:endIconTint="@color/pink">
 
@@ -112,10 +131,8 @@
                     android:id="@+id/etPasswordRepeat"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
-                    android:layout_marginTop="20dp"
                     android:background="@drawable/edit_text_background"
                     android:contentDescription="Campo de contraseña"
-                    android:hint="Repetir Contraseña"
                     android:importantForAccessibility="yes"
                     android:inputType="textPassword"
                     android:padding="12dp"

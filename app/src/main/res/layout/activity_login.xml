@@ -37,6 +37,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            app:boxBackgroundMode="none"
             app:endIconMode="password_toggle"
             app:endIconTint="@color/pink">
 
@@ -46,7 +48,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/edit_text_background"
-                android:hint="Contraseña"
+
                 android:inputType="textPassword"
                 android:padding="12dp"
                 android:textColor="@color/black"
@@ -110,9 +112,9 @@
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:background="@drawable/rounded_button"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
+                android:background="@drawable/rounded_button"
                 android:padding="8dp">
 
                 <!-- Círculo azul detrás del icono -->
@@ -136,9 +138,9 @@
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:background="@drawable/rounded_button"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
+                android:background="@drawable/rounded_button"
                 android:padding="8dp">
 
                 <!-- Icono de Apple centrado en el círculo -->
@@ -155,9 +157,9 @@
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:layout_gravity="center"
-                android:background="@drawable/rounded_button"
                 android:layout_margin="20dp"
                 android:layout_weight="1"
+                android:background="@drawable/rounded_button"
                 android:padding="8dp">
 
                 <!-- Icono de Apple centrado en el círculo -->

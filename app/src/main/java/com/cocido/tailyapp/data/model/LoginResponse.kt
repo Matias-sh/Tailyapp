@@ -19,13 +19,6 @@ data class UserInfo(
     val mascotas: List<Mascota>? = null
 )
 
-data class Persona(
-    val id: Int,
-    val nombre: String,
-    val apellido: String,
-    val telefono: String?
-)
-
 data class Mascota(
     val id: Int? = null,
     val nombre: String? = null,
